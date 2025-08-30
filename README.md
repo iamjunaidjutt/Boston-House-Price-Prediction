@@ -1,4 +1,4 @@
-# Boston House Pricing Prediction
+# Boston House Price Prediction
 
 ## Software and Tools Required
 
@@ -21,9 +21,6 @@ This project uses linear regression algorithm to predict house prices based on v
 	```bash
 	cd boston_house_pricing
 	```
-3. Create a new environment:
-
-
 3. Create a new Python environment (recommended):
 	 - Using venv (standard Python):
 		 ```bash
@@ -35,7 +32,6 @@ This project uses linear regression algorithm to predict house prices based on v
 		 conda create -n boston_env python=3.10
 		 conda activate boston_env
 		 ```
-
 4. Install required Python packages:
 	 ```bash
 	 pip install -r requirements.txt
@@ -43,15 +39,44 @@ This project uses linear regression algorithm to predict house prices based on v
 
 ## Usage
 
+
+### Jupyter Notebook
 1. Run the Jupyter notebook to explore the analysis and model training steps:
 	```bash
 	jupyter notebook
 	```
-2. For deployment, follow the instructions in the deployment section of the notebook or documentation.
+
+### Flask Web App
+2. To use the Flask web app for predictions:
+	```bash
+	python app.py
+	```
+   - Open your browser and go to `http://127.0.0.1:5000/`.
+   - Fill in the form with the required features and submit to get the predicted house price.
+   - If you encounter errors, ensure all fields are filled and valid.
+
+## Screenshots
+
+
+#### Home Page
+![Home Page](screenshots/home.png)
+
+#### Prediction Result
+![Prediction Result](screenshots/prediction.png)
 
 ## Deployment
 
-You can deploy the Flask API and Next.js frontend to Heroku, Vercel, or other cloud platforms. See the `Procfile` and deployment instructions in the repository for details.
+
+You can deploy the Flask API to Heroku or other cloud platforms. See the `Procfile` and deployment instructions in the repository for details.
+
+**Project Completion:**
+- All components (Jupyter notebook, Flask backend, HTML form, CSS styling, and screenshots) are included and validated.
+- The Flask backend robustly handles user input and provides clear error feedback.
+- Screenshots demonstrate the home page and prediction result for documentation.
+
+**Further Steps:**
+- For advanced usage, consider containerizing the app with Docker or integrating with cloud ML services.
+- For frontend improvements, build a Next.js or React interface and connect it to the Flask API.
 
 ## Contributing
 
